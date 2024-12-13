@@ -5,6 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>chenile-javadoc</artifactId>
     <packaging>pom</packaging>
+    <name>Javadoc for all Chenile Projects</name>
     <parent>
         <groupId>org.chenile</groupId>
         <artifactId>chenile-parent</artifactId>
