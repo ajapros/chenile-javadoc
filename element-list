@@ -106,9 +106,11 @@ org.chenile.utils.region
 org.chenile.utils.str
 org.chenile.utils.tenancy
 org.chenile.utils.tenant.commands
+org.chenile.workflow.activities.model
 org.chenile.workflow.api
 org.chenile.workflow.dto
 org.chenile.workflow.param
+org.chenile.workflow.service.activities
 org.chenile.workflow.service.impl
 org.chenile.workflow.service.stmcmds
 org.chenile.workflow.service.stmcmds.dto
