@@ -90,7 +90,6 @@ org.chenile.security.test
 org.chenile.stm
 org.chenile.stm.action
 org.chenile.stm.action.scriptsupport
-org.chenile.stm.cli
 org.chenile.stm.dto
 org.chenile.stm.dummy
 org.chenile.stm.exception
