@@ -42,7 +42,6 @@ org.chenile.filewatch.errorcodes
 org.chenile.filewatch.handler
 org.chenile.filewatch.init
 org.chenile.filewatch.model
-org.chenile.filewatch.reader
 org.chenile.http
 org.chenile.http.annotation
 org.chenile.http.handler
@@ -103,6 +102,7 @@ org.chenile.utils.entity.model
 org.chenile.utils.entity.service
 org.chenile.utils.region
 org.chenile.utils.str
+org.chenile.utils.stream
 org.chenile.utils.tenancy
 org.chenile.utils.tenant.commands
 org.chenile.workflow.activities.model
