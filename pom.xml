@@ -301,6 +301,11 @@
 							</packages>
 						</group>
 						<group>
+							<title>Configuration</title>
+							<packages>org.chenile.cconfig*:org.chenile.configuration.cconfig
+							</packages>
+						</group>
+						<group>
 							<title>Others</title>
 							<packages>org.chenile.*:org.chenile.configuration.*</packages>
 						</group>
