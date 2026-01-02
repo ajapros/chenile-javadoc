@@ -21,3 +21,4 @@ jobs:
           target-folder: .
           project: maven
           custom-command: mvn clean javadoc:aggregate
+          javadoc-source-folder: target/reports/apidocs
