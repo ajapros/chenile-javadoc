@@ -10,10 +10,13 @@ org.chenile.cconfig.configuration.dao
 org.chenile.cconfig.model
 org.chenile.cconfig.sdk
 org.chenile.cconfig.sdk.cache
+org.chenile.cconfig.sdk.impl
 org.chenile.cconfig.service
 org.chenile.cconfig.service.errorcodes
 org.chenile.cconfig.service.healthcheck
 org.chenile.cconfig.service.impl
+org.chenile.cconfig.spi
+org.chenile.cconfig.util
 org.chenile.cloudedgeswitch
 org.chenile.cloudedgeswitch.interceptor
 org.chenile.cloudedgeswitch.interceptor.errorcodes
@@ -153,6 +156,7 @@ org.chenile.stm.model
 org.chenile.stm.ognl
 org.chenile.stm.spring
 org.chenile.testutils
+org.chenile.utils.bits
 org.chenile.utils.entity
 org.chenile.utils.entity.model
 org.chenile.utils.entity.service
@@ -169,6 +173,7 @@ org.chenile.workflow.model
 org.chenile.workflow.param
 org.chenile.workflow.puml
 org.chenile.workflow.service.activities
+org.chenile.workflow.service.config
 org.chenile.workflow.service.impl
 org.chenile.workflow.service.stmcmds
 org.chenile.workflow.service.stmcmds.dto
