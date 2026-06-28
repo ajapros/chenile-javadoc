@@ -40,6 +40,7 @@ org.chenile.core.context
 org.chenile.core.entrypoint
 org.chenile.core.errorcodes
 org.chenile.core.event
+org.chenile.core.external
 org.chenile.core.i18n
 org.chenile.core.init
 org.chenile.core.interceptors
@@ -109,10 +110,12 @@ org.chenile.pubsub.constants
 org.chenile.pubsub.entry
 org.chenile.pubsub.errorcodes
 org.chenile.pubsub.init
+org.chenile.pubsub.interceptor
 org.chenile.pubsub.kafka.configuration
 org.chenile.pubsub.kafka.constants
 org.chenile.pubsub.kafka.impl
 org.chenile.pubsub.kafka.interceptor
+org.chenile.pubsub.logging
 org.chenile.pubsub.model
 org.chenile.pubsub.provider
 org.chenile.pubsub.wildcard
@@ -125,7 +128,10 @@ org.chenile.scheduler
 org.chenile.scheduler.errorcodes
 org.chenile.scheduler.init
 org.chenile.scheduler.jobs
+org.chenile.scheduler.launcher
 org.chenile.scheduler.model
+org.chenile.scheduler.service
+org.chenile.scheduler.store
 org.chenile.scheduler.util
 org.chenile.security
 org.chenile.security.errorcodes
@@ -169,6 +175,9 @@ org.chenile.workflow.activities.model
 org.chenile.workflow.api
 org.chenile.workflow.cli
 org.chenile.workflow.dto
+org.chenile.workflow.info
+org.chenile.workflow.info.model
+org.chenile.workflow.info.service
 org.chenile.workflow.model
 org.chenile.workflow.param
 org.chenile.workflow.puml
