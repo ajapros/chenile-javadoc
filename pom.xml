@@ -53,9 +53,24 @@
 				<artifactId>jpa-utils</artifactId>
 			</dependency>
 
+			<!-- Persistence and database support -->
+			<dependency>
+				<groupId>org.chenile</groupId>
+				<artifactId>multi-datasource-utils</artifactId>
+				<version>${chenile.version}</version>
+			</dependency>
+
 			<dependency>
 				<groupId>org.chenile</groupId>
 				<artifactId>chenile-query-controller</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>org.chenile</groupId>
+				<artifactId>chenile-mcp</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>org.chenile</groupId>
+				<artifactId>chenile-admin-ui</artifactId>
 			</dependency>
 
 			<dependency>
@@ -86,6 +101,22 @@
 			<dependency>
 				<groupId>org.chenile</groupId>
 				<artifactId>workflow-utils</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>org.chenile</groupId>
+				<artifactId>query-mcp</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>org.chenile</groupId>
+				<artifactId>workflow-mcp</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>org.chenile</groupId>
+				<artifactId>workflow-info</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>org.chenile</groupId>
+				<artifactId>stm-generate-puml</artifactId>
 			</dependency>
 
 			<dependency>
@@ -127,6 +158,30 @@
 				<groupId>org.chenile</groupId>
 				<artifactId>security-interceptor</artifactId>
 			</dependency>
+			<dependency>
+				<groupId>org.chenile</groupId>
+				<artifactId>chenile-security-auth-core</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>org.chenile</groupId>
+				<artifactId>chenile-security-auth-server</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>org.chenile</groupId>
+				<artifactId>chenile-security-gateway</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>org.chenile</groupId>
+				<artifactId>chenile-security-starter-auth-server</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>org.chenile</groupId>
+				<artifactId>chenile-security-starter-resource-server</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>org.chenile</groupId>
+				<artifactId>chenile-security-starter-gateway</artifactId>
+			</dependency>
 
 			<dependency>
 				<groupId>org.chenile</groupId>
@@ -151,6 +206,16 @@
 			<dependency>
 				<groupId>org.chenile</groupId>
 				<artifactId>chenile-kafka</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>org.chenile</groupId>
+				<artifactId>chenile-azure</artifactId>
+				<version>${chenile.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.chenile</groupId>
+				<artifactId>chenile-jvm-pub-sub</artifactId>
+				<version>${chenile.version}</version>
 			</dependency>
 
 
@@ -178,6 +243,10 @@
 				<groupId>org.chenile</groupId>
 				<artifactId>chenile-cache</artifactId>
 			</dependency>
+			<dependency>
+				<groupId>org.chenile</groupId>
+				<artifactId>chenile-config-maven-plugin</artifactId>
+			</dependency>
 
 			<dependency>
 				<groupId>org.chenile.orchestrator.process</groupId>
@@ -202,6 +271,35 @@
 			<dependency>
 				<groupId>org.chenile.orchestrator.process</groupId>
 				<artifactId>invm-process-starter</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>org.chenile.orchestrator.process</groupId>
+				<artifactId>chenile-outbox</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>org.chenile.orchestrator.process</groupId>
+				<artifactId>trigger-api</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>org.chenile.orchestrator.process</groupId>
+				<artifactId>trigger-service</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>org.chenile.orchestrator.process</groupId>
+				<artifactId>crontab-api</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>org.chenile.orchestrator.process</groupId>
+				<artifactId>crontab-service</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>org.chenile.orchestrator.process</groupId>
+				<artifactId>jdbc-process-starter</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>org.chenile.orchestrator.process</groupId>
+				<artifactId>process-admin-server</artifactId>
+				<version>${chenile.version}</version>
 			</dependency>
 
 			<dependency>
@@ -254,19 +352,23 @@
 						<group>
 							<title>Core Packages</title>
 							<packages>
-								org.chenile.base*:org.chenile.core*:org.chenile.http*:org.chenile.proxy*:org.chenile.configuration.core:org.chenile.configuration.proxy:org.chenile.configuration.http:org.chenile.configuration.controller
+								org.chenile.base*:org.chenile.core*:org.chenile.http*:org.chenile.proxy*:org.chenile.configuration.core:org.chenile.configuration.proxy:org.chenile.configuration.http*
 							</packages>
 						</group>
 						<group>
-							<title>MQTT</title>
+							<title>Persistence</title>
+							<packages>org.chenile.jpa*:org.chenile.configuration.jpautils*:org.chenile.configuration.multids*</packages>
+						</group>
+						<group>
+							<title>Messaging</title>
 							<packages>
-								org.chenile.mqtt*:org.chenile.cloudedgeswitch*:org.chenile.configuration.mqtt:org.chenile.configuration.cloudedgeswitch
+								org.chenile.mqtt*:org.chenile.cloudedgeswitch*:org.chenile.pubsub.azure*:org.chenile.pubsub.jvm*:org.chenile.configuration.mqtt:org.chenile.configuration.cloudedgeswitch
 							</packages>
 						</group>
 						<group>
 							<title>STM/OWIZ/Workflow</title>
 							<packages>
-								org.chenile.owiz*:org.chenile.stm*:org.chenile.ognl:org.chenile.workflow*:org.chenile.configuration.workflow
+								org.chenile.owiz*:org.chenile.stm*:org.chenile.ognl:org.chenile.workflow*:org.chenile.configuration.workflow*:org.chenile.configuration.stm
 							</packages>
 						</group>
 						<group>
@@ -276,9 +378,17 @@
 							</packages>
 						</group>
 						<group>
+							<title>Security</title>
+							<packages>org.chenile.security*:org.chenile.configuration.security</packages>
+						</group>
+						<group>
 							<title>Query</title>
-							<packages>org.chenile.query*:org.chenile.configuration.query.service
+							<packages>org.chenile.query*:org.chenile.configuration.controller:org.chenile.configuration.query.*
 							</packages>
+						</group>
+						<group>
+							<title>Trigger and Crontab</title>
+							<packages>org.chenile.trigger*:org.chenile.configuration.trigger*:org.chenile.configuration.crontab*</packages>
 						</group>
 						<group>
 							<title>Process Management</title>
@@ -296,13 +406,26 @@
 							</packages>
 						</group>
 						<group>
-							<title>Configuration</title>
-							<packages>org.chenile.cconfig*:org.chenile.configuration.cconfig
+							<title>Administration and MCP</title>
+							<packages>org.chenile.mcp*:org.chenile.configuration.mcp:org.chenile.configuration.admin:org.chenile.configuration.workflow.info*
 							</packages>
 						</group>
 						<group>
+							<title>Utilities and Runtime</title>
+							<packages>org.chenile.utils*:org.chenile.cache*:org.chenile.filewatch*:org.chenile.scheduler*:org.chenile.configuration.utils:org.chenile.configuration.filewatch:org.chenile.configuration.scheduler:org.chenile.configuration.cache</packages>
+						</group>
+						<group>
+							<title>Configuration</title>
+							<packages>org.chenile.cconfig*:org.chenile.configuration.*
+							</packages>
+						</group>
+						<group>
+							<title>Developer Tools</title>
+							<packages>org.chenile.config.plugin:org.chenile</packages>
+						</group>
+						<group>
 							<title>Others</title>
-							<packages>org.chenile.*:org.chenile.configuration.*</packages>
+							<packages>org.chenile.*</packages>
 						</group>
 					</groups>
 				</configuration>
